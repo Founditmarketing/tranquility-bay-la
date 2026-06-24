@@ -17,6 +17,14 @@
 			.lazyloading {
 				max-width: 100%;
 			}
+			/* Static site overrides: force-show elements hidden by Divi JS animations */
+			.et-waypoint:not(.et_pb_counters) { opacity: 1 !important; }
+			.et_pb_preload > div { visibility: visible !important; }
+			.et-pb-before-scroll-animation { opacity: 1 !important; }
+			.et_pb_preload,
+			.et_pb_section.et_pb_section_video.et_pb_preload { background: transparent !important; }
+			.et_pb_preload:before { display: none !important; }
+			.et_multi_view_image__loading { visibility: visible !important; }
 		</style>
 		<meta content="duriza-divi-child -theme v.1.0" name="generator"/>
 <style id="global-styles-inline-css">
@@ -1095,7 +1103,7 @@ setup_collapsible_submenus();
 				
 				
 				
-				<div class="et_pb_code_inner"><iframe data-src="https://www.google.com/maps?q=Tranquility+Bay+79+Tranquility+Lane+Zwolle+LA+71486&z=14&output=embed" width="1000" height="450" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" class="lazyload" data-load-mode="1"></iframe></div>
+				<div class="et_pb_code_inner"><iframe src="https://www.google.com/maps?q=Tranquility+Bay+79+Tranquility+Lane+Zwolle+LA+71486&z=14&output=embed" width="1000" height="450" loading="lazy"></iframe></div>
 			</div>
 			</div>
 				
